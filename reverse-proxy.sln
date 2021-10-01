@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yarp.ReverseProxy.Tests", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yarp.Tests.Common", "test\Tests.Common\Yarp.Tests.Common.csproj", "{FE4D0915-1697-4AED-929B-9F71530336EF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{CBD16FE0-506D-4CA2-8212-00994AA86358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicYarpSample", "samples\BasicYarpSample\BasicYarpSample.csproj", "{D1C5691F-39FE-4958-8F8A-AEDA905A5FF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{FE4D0915-1697-4AED-929B-9F71530336EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE4D0915-1697-4AED-929B-9F71530336EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE4D0915-1697-4AED-929B-9F71530336EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1C5691F-39FE-4958-8F8A-AEDA905A5FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C5691F-39FE-4958-8F8A-AEDA905A5FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C5691F-39FE-4958-8F8A-AEDA905A5FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C5691F-39FE-4958-8F8A-AEDA905A5FF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{7BA56812-F53E-4B8A-B878-0310BC038E9F} = {6D85721C-7CE9-49EB-ABD4-3563D37E2172}
 		{CDC640DB-9D3B-4DFB-841F-A3429FC0B1DF} = {78552C51-17FD-426D-A793-FA39FF7093A8}
 		{FE4D0915-1697-4AED-929B-9F71530336EF} = {78552C51-17FD-426D-A793-FA39FF7093A8}
+		{D1C5691F-39FE-4958-8F8A-AEDA905A5FF0} = {CBD16FE0-506D-4CA2-8212-00994AA86358}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {220F3812-2C0E-4EE3-BA74-57F36D249304}
