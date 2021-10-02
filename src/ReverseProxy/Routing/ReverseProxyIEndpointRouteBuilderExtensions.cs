@@ -21,9 +21,16 @@ namespace Microsoft.AspNetCore.Builder
         /// </summary>
         public static ReverseProxyConventionBuilder MapReverseProxy(this IEndpointRouteBuilder endpoints)
         {
-            return
+            return endpoints.MapReverseProxy(app =>
+            {
+
+            });
         }
 
+        /// <summary>
+        /// Adds Reverse Proxy routes to the route table with the customized processing pipeline. The pipeline includes
+        /// by default the initialization step and the final proxy step, but not LoadBalancingMiddleware or other intermediate components.
+        /// </summary>
         public static ReverseProxyConventionBuilder MapReverseProxy(this IEndpointRouteBuilder endpoints, Action<IReverseProxyApplicationBuilder> configureApp)
         {
             if (endpoints is null)
@@ -39,7 +46,7 @@ namespace Microsoft.AspNetCore.Builder
             configureApp(proxyAppBuilder);
             var app = proxyAppBuilder.Build();
 
-            var proxyEndpointFactory = endpoints.ServiceProvider.GetRequiredService<>
+            return GetOrCreateDataSource(endpoints).DefaultBuilder;
         }
 
         private static ProxyConfigManager GetOrCreateDataSource(IEndpointRouteBuilder endpoints)

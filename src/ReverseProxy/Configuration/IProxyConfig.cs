@@ -12,6 +12,11 @@ namespace Yarp.ReverseProxy.Configuration
     public interface IProxyConfig
     {
         /// <summary>
+        /// Cluster information for where to proxy requests to.
+        /// </summary>
+        IReadOnlyList<ClusterConfig> Clusters { get; }
+
+        /// <summary>
         /// A notification that triggers when this snapshot expires.
         /// </summary>
         IChangeToken ChangeToken { get; }

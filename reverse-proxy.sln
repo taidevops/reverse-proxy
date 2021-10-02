@@ -19,7 +19,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yarp.Tests.Common", "test\T
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{CBD16FE0-506D-4CA2-8212-00994AA86358}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicYarpSample", "samples\BasicYarpSample\BasicYarpSample.csproj", "{D1C5691F-39FE-4958-8F8A-AEDA905A5FF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicYarpSample", "samples\BasicYarpSample\BasicYarpSample.csproj", "{D1C5691F-39FE-4958-8F8A-AEDA905A5FF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BA1BAFE4-59D0-4879-8488-1F769E26B6CA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		global.json = global.json
+		NuGet.config = NuGet.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

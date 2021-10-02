@@ -24,6 +24,7 @@ namespace BasicYARPSample
             // Add the reverse proxy to capability to the server
             var proxyBuilder = services.AddReverseProxy();
             // Initialize the reverse proxy from the "ReverseProxy" section of configuration
+            proxyBuilder.LoadFromConfig(Configuration.GetSection("ReverseProxy"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request 
@@ -39,6 +40,7 @@ namespace BasicYARPSample
             // Register the reverse proxy routes
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapReverseProxy();
             });
         }
     }
