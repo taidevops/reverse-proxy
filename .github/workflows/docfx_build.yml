@@ -18,11 +18,6 @@ jobs:
       - name: Build docs
         run: "& ./eng/common/build.ps1 -restore -build -projects ./docs/docfx/docfx.csproj"
         working-directory: ./source
-      - name: Prepare ssh key
-        uses: webfactory/ssh-agent@v0.5.0
-        if: ${{ github.event_name == 'push' }}
-        with:
-          ssh-private-key: ${{ secrets.GH_PAGES_KEY }}
       # Check out gh-pages branch to the 'docs' subdirectory
       - name: Checkout docs
         uses: actions/checkout@v2
