@@ -28,6 +28,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		NuGet.config = NuGet.config
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "testassets", "testassets", "{578C8577-45DC-44FE-970E-E281FF7153C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkApp", "testassets\BenchmarkApp\BenchmarkApp.csproj", "{9CAB60A7-75BC-4F97-B763-EE23BBCA5293}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +58,10 @@ Global
 		{D1C5691F-39FE-4958-8F8A-AEDA905A5FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1C5691F-39FE-4958-8F8A-AEDA905A5FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1C5691F-39FE-4958-8F8A-AEDA905A5FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CAB60A7-75BC-4F97-B763-EE23BBCA5293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CAB60A7-75BC-4F97-B763-EE23BBCA5293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CAB60A7-75BC-4F97-B763-EE23BBCA5293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CAB60A7-75BC-4F97-B763-EE23BBCA5293}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +72,7 @@ Global
 		{CDC640DB-9D3B-4DFB-841F-A3429FC0B1DF} = {78552C51-17FD-426D-A793-FA39FF7093A8}
 		{FE4D0915-1697-4AED-929B-9F71530336EF} = {78552C51-17FD-426D-A793-FA39FF7093A8}
 		{D1C5691F-39FE-4958-8F8A-AEDA905A5FF0} = {CBD16FE0-506D-4CA2-8212-00994AA86358}
+		{9CAB60A7-75BC-4F97-B763-EE23BBCA5293} = {578C8577-45DC-44FE-970E-E281FF7153C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {220F3812-2C0E-4EE3-BA74-57F36D249304}

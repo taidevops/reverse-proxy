@@ -18,5 +18,6 @@ namespace Yarp.ReverseProxy.Configuration
         /// This field is required.
         /// </summary>
         public string RouteId { get; init; } = default!;
+
     }
 }
