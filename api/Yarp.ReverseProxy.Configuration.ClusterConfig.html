@@ -98,7 +98,7 @@
     <a href="https://github.com/taidevops/reverse-proxy/new/release/latest/apiSpec/new?filename=Yarp_ReverseProxy_Configuration_ClusterConfig_ClusterId.md&amp;value=---%0Auid%3A%20Yarp.ReverseProxy.Configuration.ClusterConfig.ClusterId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L19">View Source</a>
+    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L20">View Source</a>
   </span>
   <a id="Yarp_ReverseProxy_Configuration_ClusterConfig_ClusterId_" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.ClusterId*"></a>
   <h4 id="Yarp_ReverseProxy_Configuration_ClusterConfig_ClusterId" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.ClusterId">ClusterId</h4>
@@ -127,10 +127,134 @@ This field is required.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/taidevops/reverse-proxy/new/release/latest/apiSpec/new?filename=Yarp_ReverseProxy_Configuration_ClusterConfig_Destinations.md&amp;value=---%0Auid%3A%20Yarp.ReverseProxy.Configuration.ClusterConfig.Destinations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L50">View Source</a>
+  </span>
+  <a id="Yarp_ReverseProxy_Configuration_ClusterConfig_Destinations_" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.Destinations*"></a>
+  <h4 id="Yarp_ReverseProxy_Configuration_ClusterConfig_Destinations" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.Destinations">Destinations</h4>
+  <div class="markdown level1 summary"><p>The set of destinations associated with this cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, DestinationConfig&gt;? Destinations { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">IReadOnlyDictionary</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="Yarp.ReverseProxy.Configuration.DestinationConfig.html">DestinationConfig</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/taidevops/reverse-proxy/new/release/latest/apiSpec/new?filename=Yarp_ReverseProxy_Configuration_ClusterConfig_HealthCheck.md&amp;value=---%0Auid%3A%20Yarp.ReverseProxy.Configuration.ClusterConfig.HealthCheck%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L35">View Source</a>
+  </span>
+  <a id="Yarp_ReverseProxy_Configuration_ClusterConfig_HealthCheck_" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.HealthCheck*"></a>
+  <h4 id="Yarp_ReverseProxy_Configuration_ClusterConfig_HealthCheck" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.HealthCheck">HealthCheck</h4>
+  <div class="markdown level1 summary"><p>Health checking config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HealthCheckConfig HealthCheck { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yarp.ReverseProxy.Configuration.HealthCheckConfig.html">HealthCheckConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/taidevops/reverse-proxy/new/release/latest/apiSpec/new?filename=Yarp_ReverseProxy_Configuration_ClusterConfig_HttpClient.md&amp;value=---%0Auid%3A%20Yarp.ReverseProxy.Configuration.ClusterConfig.HttpClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L40">View Source</a>
+  </span>
+  <a id="Yarp_ReverseProxy_Configuration_ClusterConfig_HttpClient_" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.HttpClient*"></a>
+  <h4 id="Yarp_ReverseProxy_Configuration_ClusterConfig_HttpClient" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.HttpClient">HttpClient</h4>
+  <div class="markdown level1 summary"><p>Config for the HTTP client that is used to call destinations in this cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpClientConfig HttpClient { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yarp.ReverseProxy.Configuration.HttpClientConfig.html">HttpClientConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/taidevops/reverse-proxy/new/release/latest/apiSpec/new?filename=Yarp_ReverseProxy_Configuration_ClusterConfig_HttpRequest.md&amp;value=---%0Auid%3A%20Yarp.ReverseProxy.Configuration.ClusterConfig.HttpRequest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L45">View Source</a>
+  </span>
+  <a id="Yarp_ReverseProxy_Configuration_ClusterConfig_HttpRequest_" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.HttpRequest*"></a>
+  <h4 id="Yarp_ReverseProxy_Configuration_ClusterConfig_HttpRequest" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.HttpRequest">HttpRequest</h4>
+  <div class="markdown level1 summary"><p>Config for outgoing HTTP requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ForwarderRequestConfig HttpRequest { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yarp.ReverseProxy.Forwarder.ForwarderRequestConfig.html">ForwarderRequestConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/taidevops/reverse-proxy/new/release/latest/apiSpec/new?filename=Yarp_ReverseProxy_Configuration_ClusterConfig_LoadBalancingPolicy.md&amp;value=---%0Auid%3A%20Yarp.ReverseProxy.Configuration.ClusterConfig.LoadBalancingPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L24">View Source</a>
+    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L25">View Source</a>
   </span>
   <a id="Yarp_ReverseProxy_Configuration_ClusterConfig_LoadBalancingPolicy_" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.LoadBalancingPolicy*"></a>
   <h4 id="Yarp_ReverseProxy_Configuration_ClusterConfig_LoadBalancingPolicy" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.LoadBalancingPolicy">LoadBalancingPolicy</h4>
@@ -156,6 +280,68 @@ This field is required.</p>
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/taidevops/reverse-proxy/new/release/latest/apiSpec/new?filename=Yarp_ReverseProxy_Configuration_ClusterConfig_Metadata.md&amp;value=---%0Auid%3A%20Yarp.ReverseProxy.Configuration.ClusterConfig.Metadata%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L55">View Source</a>
+  </span>
+  <a id="Yarp_ReverseProxy_Configuration_ClusterConfig_Metadata_" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.Metadata*"></a>
+  <h4 id="Yarp_ReverseProxy_Configuration_ClusterConfig_Metadata" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.Metadata">Metadata</h4>
+  <div class="markdown level1 summary"><p>Arbitrary key-value pairs that further describe this cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, string&gt;? Metadata { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">IReadOnlyDictionary</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/taidevops/reverse-proxy/new/release/latest/apiSpec/new?filename=Yarp_ReverseProxy_Configuration_ClusterConfig_SessionAffinity.md&amp;value=---%0Auid%3A%20Yarp.ReverseProxy.Configuration.ClusterConfig.SessionAffinity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L30">View Source</a>
+  </span>
+  <a id="Yarp_ReverseProxy_Configuration_ClusterConfig_SessionAffinity_" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.SessionAffinity*"></a>
+  <h4 id="Yarp_ReverseProxy_Configuration_ClusterConfig_SessionAffinity" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.SessionAffinity">SessionAffinity</h4>
+  <div class="markdown level1 summary"><p>Session affinity config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionAffinityConfig SessionAffinity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yarp.ReverseProxy.Configuration.SessionAffinityConfig.html">SessionAffinityConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -163,7 +349,7 @@ This field is required.</p>
     <a href="https://github.com/taidevops/reverse-proxy/new/release/latest/apiSpec/new?filename=Yarp_ReverseProxy_Configuration_ClusterConfig_Equals_Yarp_ReverseProxy_Configuration_ClusterConfig_.md&amp;value=---%0Auid%3A%20Yarp.ReverseProxy.Configuration.ClusterConfig.Equals(Yarp.ReverseProxy.Configuration.ClusterConfig)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L26">View Source</a>
+    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L57">View Source</a>
   </span>
   <a id="Yarp_ReverseProxy_Configuration_ClusterConfig_Equals_" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.Equals*"></a>
   <h4 id="Yarp_ReverseProxy_Configuration_ClusterConfig_Equals_Yarp_ReverseProxy_Configuration_ClusterConfig_" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.Equals(Yarp.ReverseProxy.Configuration.ClusterConfig)">Equals(ClusterConfig)</h4>
@@ -210,7 +396,7 @@ This field is required.</p>
     <a href="https://github.com/taidevops/reverse-proxy/new/release/latest/apiSpec/new?filename=Yarp_ReverseProxy_Configuration_ClusterConfig_GetHashCode.md&amp;value=---%0Auid%3A%20Yarp.ReverseProxy.Configuration.ClusterConfig.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L46">View Source</a>
+    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L85">View Source</a>
   </span>
   <a id="Yarp_ReverseProxy_Configuration_ClusterConfig_GetHashCode_" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.GetHashCode*"></a>
   <h4 id="Yarp_ReverseProxy_Configuration_ClusterConfig_GetHashCode" data-uid="Yarp.ReverseProxy.Configuration.ClusterConfig.GetHashCode">GetHashCode()</h4>
@@ -250,7 +436,7 @@ This field is required.</p>
                     <a href="https://github.com/taidevops/reverse-proxy/new/release/latest/apiSpec/new?filename=Yarp_ReverseProxy_Configuration_ClusterConfig.md&amp;value=---%0Auid%3A%20Yarp.ReverseProxy.Configuration.ClusterConfig%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/taidevops/reverse-proxy/blob/release/latest/src/ReverseProxy/Configuration/ClusterConfig.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
