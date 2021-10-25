@@ -11,7 +11,7 @@ namespace BasicYARPSample
         public static void Main(string[] args)
         {
             // Create a Kestrel web server, and tell it to use the Startup class
-            // for the server configuration
+            // for the service configuration
             var myHostBuilder = Host.CreateDefaultBuilder(args);
             myHostBuilder.ConfigureWebHostDefaults(webHostBuilder =>
             {

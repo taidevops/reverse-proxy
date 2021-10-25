@@ -25,7 +25,7 @@ namespace Yarp.ReverseProxy.Management.Tests
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddLogging();
             serviceCollection.AddRouting();
-            var proxyBuilder = serviceCollection.AddReverseProxy().LoadFromMemory();
+            //var proxyBuilder = serviceCollection.AddReverseProxy().LoadFromMemory();
             var services = serviceCollection.BuildServiceProvider();
             return services;
         }
