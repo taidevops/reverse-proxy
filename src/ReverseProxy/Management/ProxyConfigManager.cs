@@ -31,6 +31,7 @@ namespace Yarp.ReverseProxy.Management
     internal sealed class ProxyConfigManager : EndpointDataSource, IDisposable
     {
         private readonly object _syncRoot = new object();
+        private readonly ILogger<ProxyConfigManager> _logger;
         private readonly IProxyConfigProvider _provider;
         private IDisposable? _changeSubscription;
         private readonly List<Action<EndpointBuilder>> _conventions;
@@ -40,8 +41,10 @@ namespace Yarp.ReverseProxy.Management
         private IChangeToken _changeToken;
 
         public ProxyConfigManager(
+            ILogger<ProxyConfigManager> logger,
             IProxyConfigProvider provider)
         {
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _provider = provider ?? throw new ArgumentNullException(nameof(provider));
 
             _conventions = new List<Action<EndpointBuilder>>();

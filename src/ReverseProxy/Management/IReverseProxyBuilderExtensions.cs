@@ -12,6 +12,7 @@ namespace Yarp.ReverseProxy.Management
     {
         public static IReverseProxyBuilder AddConfigBuilder(this IReverseProxyBuilder builder)
         {
+            
             return builder;
         }
 

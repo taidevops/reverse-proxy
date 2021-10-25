@@ -49,6 +49,51 @@ namespace Microsoft.AspNetCore.Builder
             return this;
         }
 
+        /// <summary>
+        /// Configures the endpoints for all routes 
+        /// </summary>
+        /// <param name="convention">The convention to add to the builder.</param>
+        /// <returns></returns>
+        public ReverseProxyConventionBuilder ConfigureEndpoints(Action<IEndpointConventionBuilder, RouteConfig> convention)
+        {
+            _ = convention ?? throw new ArgumentNullException(nameof(convention));
+
+            void Action(EndpointBuilder endpointBuilder)
+            {
+                var route = endpointBuilder.Metadata.OfType<RouteModel>().Single();
+                var conventionBuilder = new EndpointBuilderConventionBuilder(endpointBuilder);
+                convention(conventionBuilder, route.Config);
+            }
+
+            Add(Action);
+
+            return this;
+        }
+
+        /// <summary>
+        /// Configures the endpoints for all routes 
+        /// </summary>
+        /// <param name="convention">The convention to add to the builder.</param>
+        /// <returns></returns>
+        public ReverseProxyConventionBuilder ConfigureEndpoints(Action<IEndpointConventionBuilder, RouteConfig, ClusterConfig?> convention)
+        {
+            _ = convention ?? throw new ArgumentNullException(nameof(convention));
+
+            void Action(EndpointBuilder endpointBuilder)
+            {
+                var routeModel = endpointBuilder.Metadata.OfType<RouteModel>().Single();
+
+                var clusterConfig = routeModel.Cluster?.Model.Config;
+                var routeConfig = routeModel.Config;
+                var conventionBuilder = new EndpointBuilderConventionBuilder(endpointBuilder);
+                convention(conventionBuilder, routeConfig, clusterConfig);
+            }
+
+            Add(Action);
+
+            return this;
+        }
+
         private class EndpointBuilderConventionBuilder : IEndpointConventionBuilder
         {
             private readonly EndpointBuilder _endpointBuilder;

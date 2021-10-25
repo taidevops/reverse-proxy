@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{87BB5EE6-7562-42B2-8884-D67FF6B67D1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".repo", ".repo", "{008D6D51-CBDC-4184-A07E-92EF94F6C41D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Kubernetes.Core", "src\Core\Microsoft.Kubernetes.Core.csproj", "{0F011EDC-9509-4BCD-A2AA-E0B66D01E2A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Kubernetes.Controller", "src\Controller\Microsoft.Kubernetes.Controller.csproj", "{CCD1FA85-EED5-4AC5-8DD8-494EA64A89C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F011EDC-9509-4BCD-A2AA-E0B66D01E2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F011EDC-9509-4BCD-A2AA-E0B66D01E2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F011EDC-9509-4BCD-A2AA-E0B66D01E2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F011EDC-9509-4BCD-A2AA-E0B66D01E2A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCD1FA85-EED5-4AC5-8DD8-494EA64A89C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCD1FA85-EED5-4AC5-8DD8-494EA64A89C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCD1FA85-EED5-4AC5-8DD8-494EA64A89C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCD1FA85-EED5-4AC5-8DD8-494EA64A89C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0F011EDC-9509-4BCD-A2AA-E0B66D01E2A3} = {87BB5EE6-7562-42B2-8884-D67FF6B67D1A}
+		{CCD1FA85-EED5-4AC5-8DD8-494EA64A89C4} = {87BB5EE6-7562-42B2-8884-D67FF6B67D1A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2ABD90C-F0EF-423C-85EB-4CE0AC12A616}
+	EndGlobalSection
+EndGlobal
