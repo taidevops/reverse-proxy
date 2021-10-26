@@ -13,6 +13,5 @@ namespace Yarp.ReverseProxy.Health
     /// </summary>
     public interface IDestinationHealthUpdater
     {
-        void SetPassive(ClusterState cluster, Des)
     }
 }
