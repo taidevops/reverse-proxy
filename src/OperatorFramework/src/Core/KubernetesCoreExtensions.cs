@@ -2,14 +2,14 @@
 // Licensed under the MIT License.
 
 using k8s;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using Microsoft.Kubernetes;
 using Microsoft.Kubernetes.Client;
 using Microsoft.Kubernetes.ResourceKinds;
 using Microsoft.Kubernetes.Resources;
 using System.Linq;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace Microsoft.Kubernetes
 {
     /// <summary>
     /// Class KubernetesCoreExtensions.
